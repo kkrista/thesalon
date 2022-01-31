@@ -17,11 +17,23 @@
 </head>
 <body>
     <header class="navigointipalkki">
-        <a href="./"><figure><img src="./images/The Salon Logo (4).png" alt="The Salon Logo" class="logo"></figure></a>
-        <h3><a href="#anchor2">Varaa aika</a></h3>
+       <a href="./"><figure><img src="./images/The Salon Logo (4).png" alt="The Salon Logo" class="logo"></figure></a>
+        <!-- <h3><a href="#anchor2">Varaa aika</a></h3>
         <h3><a href="#anchor3">Palvelut</a></h3>
         <h3><a href="#anchor4">Hinnasto</a></h3>
         <h3><a href="#anchor5">Ota yhteyttä</a></h3>
+        <h3><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i></a></h3> -->
+
+          <div class="topnav" id="myTopnav">
+            <a href="#anchor2" class="active">Varaa aika</a>
+            <a href="#anchor3">Palvelut</a>
+            <a href="#anchor4">Hinnasto</a>
+            <a href="#anchor5">Ota yhteytta</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
     </header>
     <hr>
 
@@ -82,8 +94,6 @@
         <p class="muotoiltu">
         </p>
 
-        
-
         <div class="contact">
           <form action="/action_page.php">
             <label for="fname">First Name</label>
@@ -110,8 +120,17 @@
           <p class="copyright">The Salon © 2022</p>
   </div>
 
-   
-  
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
     
 </body>
 </html>
