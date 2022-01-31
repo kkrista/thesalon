@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: #333232; */
+    padding-top: 80px;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    visibility: hidden;
+}
+
+.logo {
+    max-width: 100%;
+    width: 150px;
+    margin: 2rem;
+    padding-left: 2rem;
+}
+
+.navigointipalkki {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.navigointipalkki > * {
+    flex-grow: 0.5;
+    flex-basis: 0;
+}
+
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+
+h3 {
+    font-size: 2rem;
+    padding-top: 6rem;
+}
+
+h3 a {
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+#contact {
+    color: white;
+    text-align: center;
+}
+
+.form div {
+    text-align: center;
+}
+
+.form label {
+    display: inline-block;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+.form input {
+    display: inline-block;
+    width: 200px;
+}
+
+.form .button {
+    width: unset;
+}
+
+.etusivu {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.alatunniste {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.hinnasto {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  h2 {
+    color: black;
+    font-style: italic;
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 27px;
+    font-weight: bold;
+    background-color: #FF5F93;
+    padding: 2.5rem;
+    border-radius: 1.1rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 4rem;
+  box-shadow: 5px 8px darkgrey;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .row {
+    margin: 5rem;
+    padding-top: 10rem;
+  }
+
+  .container { 
+    height: 200px;
+    position: relative;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  * {box-sizing: border-box;}
+
+
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #FF5F93;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: black;
+  padding: 7rem;
+  color: white;
+  font-size: 3rem;
+}
+
+.copy {
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  text-align: center;
+}
+
+p {
+  margin-left: 13rem;
+}
+
+h3 a {
+  color: white;
+  text-decoration: none;
+  /* font-size: 2rem; */
+}
+
+h3 a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h4 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+
+  @media screen and (max-width: 425px) {
+    .column {
+      width: 100%;
+    }
+    .etusivu {
+      width: 100%;
+    }
+    .alatunniste {
+      width: 100%;
+    }
+    .hinnasto {
+      width: 100%;
+    }
+
+
+
+  }
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 70%;
+    }
+  }
