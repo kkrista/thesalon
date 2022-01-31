@@ -178,6 +178,7 @@ figure img {
   .container { 
     height: 200px;
     position: relative;
+   
   }
   
   .center {
@@ -261,6 +262,20 @@ h1 {
   padding: 2rem;
   margin-top: 3rem;
   font-size: 2rem;
+}
+
+/* Footer */
+
+.footer-basic {
+  padding:40px 0;
+  background-color: black;
+  color: white;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  font-size:17px;
+  color: white;
 }
 
 
